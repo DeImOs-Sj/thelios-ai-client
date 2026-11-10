@@ -1,5 +1,6 @@
 /* Landing page. Everything is scoped under .lp so the dashboard styles are untouched. */
 .lp {
+  --lp-nav-h: 76px;
   --lp-ink: #000;
   --lp-paper: #fff;
   --lp-grey: #f0f0f0;
@@ -30,7 +31,7 @@
 
 
 /* nav */
-.lp-nav { --lp-nav-h: 76px; position: sticky; top: 0; z-index: 50; height: var(--lp-nav-h); margin-bottom: calc(-1 * var(--lp-nav-h)); display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 32px; color: #000; background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(14px); transition: background-color 1.15s var(--lp-ease), color 1.15s var(--lp-ease), box-shadow 0.3s; }
+.lp-nav { position: sticky; top: 0; z-index: 50; height: var(--lp-nav-h); margin-bottom: calc(-1 * var(--lp-nav-h)); display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 0 32px; color: #000; background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(14px); transition: background-color 1.15s var(--lp-ease), color 1.15s var(--lp-ease), box-shadow 0.3s; }
 .lp-nav--over { background: transparent; color: #fff; backdrop-filter: none; }
 .lp-nav.is-instant, .lp-nav.is-instant * { transition: none !important; }
 .lp-nav.scrolled { box-shadow: 0 1px 0 var(--lp-line); }
@@ -55,6 +56,7 @@
 .lp-eyebrow.dark { color: var(--lp-mid); opacity: 1; }
 
 /* sections */
+.lp-section, .lp-found-sec, .lp-bel-sec, .lp-roadmap, .lp-cta { scroll-margin-top: var(--lp-nav-h); }
 .lp-section { padding: 120px 0; }
 .lp-section-tight { padding-top: 40px; }
 .lp-grey { background: var(--lp-grey); }
@@ -166,15 +168,18 @@
 }
 @media (max-width: 640px) {
   .lp-wrap { padding: 0 16px; }
-  .lp-nav { --lp-nav-h: 68px; padding: 0 16px; }
+  .lp { --lp-nav-h: 68px; }
+  .lp-nav { padding: 0 16px; }
+  .lp-logo-image { width: 112px; }
   .lp-section, .lp-band, .lp-cta { padding: 80px 0; }
   .lp-section-tight { padding-top: 24px; }
   .lp-band, .lp-cta { margin: 0 8px; border-radius: 28px; }
   .lp-stats { grid-template-columns: 1fr 1fr; }
   .lp-card, .lp-product, .lp-principles article { padding: 24px; }
-  .lp-video-frame, .lp-video-frame video { min-height: 320px; border-radius: 28px; }
+  .lp-video-frame, .lp-video-frame video { min-height: 240px; border-radius: 28px; }
   .lp-media-chart { min-height: 190px; }
-  .lp-roadmap { padding-top: 0; }
+  .lp-roadmap { padding-top: 24px; }
+  .lp-roadmap-media { border-radius: 28px; }
 }
 
 
