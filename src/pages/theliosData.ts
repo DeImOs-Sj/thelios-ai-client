@@ -109,7 +109,7 @@ export const THELIOS = {
     { word: 'Move Forward', body: 'Thelios turns visual data into a goldmine for evaluating performance and predicting success.' },
   ] satisfies TheliosPrinciple[],
   media: {
-    logo: 'https://www.thelios.ai/wp-content/uploads/2024/10/logo-thelios-hr.svg',
+    logo: '/logo.svg',
     heroImage: 'https://www.thelios.ai/wp-content/uploads/2024/10/hero.svg',
     heroVideo: 'https://www.thelios.ai/wp-content/uploads/2026/02/demo_video_nba.mp4',
     sportsVideo: 'https://thelios.ai/wp-content/uploads/2024/10/nfl.mp4',
