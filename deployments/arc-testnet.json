@@ -1,0 +1,171 @@
+{
+  "chainId": 5042002,
+  "rpc": "https://rpc.testnet.arc.network",
+  "network": "Arc Testnet (chain id 5042002). TEST TOKENS: tTSLA is a mock token, not a real stock.",
+  "explorer": "https://explorer.testnet.arc.io",
+  "deployedAt": 1794008080,
+  "startBlock": 71106269,
+  "poolManager": "0x1d70945634F618eefdF9EDaAdB59B9A183CEF929",
+  "oracle": "0x907782029126f5f583010b4B5877A351236FE8f5",
+  "hook": "0xb5b44F87473da93eb56BE43597BeaB59F50a2080",
+  "forwarder": "0x76c9cf548b4179F8901cda1f8623568b58215E62",
+  "usdc": "0x3600000000000000000000000000000000000000",
+  "issuer": "0x55cf735Efe7c5b266dd6248B61dc765D4c7e51f9",
+  "swapRouter": "0xAeAb87E3a16f980f69267F6002B21cb9CFc36d4A",
+  "liquidityRouter": "0xFF6d2be7c1128d42Fba72401ce974436336674c7",
+  "baseFeePips": 3000,
+  "feeSetEvent": "FeeSet(bytes32,uint24,uint24,uint32,bool)",
+  "accounts": {
+    "deployer": "0xE717D34064E45aF53c8aFC2D4a64144803E2428F",
+    "lps": [
+      "0xE717D34064E45aF53c8aFC2D4a64144803E2428F",
+      "0xE717D34064E45aF53c8aFC2D4a64144803E2428F",
+      "0xE717D34064E45aF53c8aFC2D4a64144803E2428F"
+    ],
+    "arb": "0xE717D34064E45aF53c8aFC2D4a64144803E2428F",
+    "retail": "0xE717D34064E45aF53c8aFC2D4a64144803E2428F",
+    "note": "addresses only; no keys are stored in this manifest"
+  },
+  "lpRanges": {
+    "lp1": "wide (full range)",
+    "lp2": "medium (about +-10%)",
+    "lp3": "tight (about +-2.4%)"
+  },
+  "tickers": {
+    "TSLA": {
+      "feedId": "0x54534c4100000000000000000000000000000000000000000000000000000000",
+      "token": "0x7910aEb89f4843457d90cb26161EebA34d39EB60",
+      "startPriceE8": 35822000000,
+      "sigmaE12": 132600000,
+      "stockIsCurrency0": false,
+      "hookPool": {
+        "poolId": "0x8da9612899aac68e58409d29419ca36966ab5cf3e41ca9d2334f6c55a7c64aed",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0x7910aEb89f4843457d90cb26161EebA34d39EB60",
+          "fee": 8388608,
+          "tickSpacing": 60,
+          "hooks": "0xb5b44F87473da93eb56BE43597BeaB59F50a2080"
+        }
+      },
+      "controlPool": {
+        "poolId": "0x9ee74a05d558a48e026d5259bd2cb2d43759d4643dc9bb2517fd98992b5a4cb6",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0x7910aEb89f4843457d90cb26161EebA34d39EB60",
+          "fee": 3000,
+          "tickSpacing": 60,
+          "hooks": "0x0000000000000000000000000000000000000000"
+        }
+      }
+    },
+    "NVDA": {
+      "feedId": "0x4e56444100000000000000000000000000000000000000000000000000000000",
+      "token": "0xf9B947A1d5bD8abfED4D9b729A0AEaA726228fE6",
+      "startPriceE8": 18664000000,
+      "sigmaE12": 85200000,
+      "stockIsCurrency0": false,
+      "hookPool": {
+        "poolId": "0x4562aa9c37d99d361b35bafcbde4ab22d2f0d811d8b2e018b609441d3dd838b7",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0xf9B947A1d5bD8abfED4D9b729A0AEaA726228fE6",
+          "fee": 8388608,
+          "tickSpacing": 60,
+          "hooks": "0xb5b44F87473da93eb56BE43597BeaB59F50a2080"
+        }
+      },
+      "controlPool": {
+        "poolId": "0x31deac17bf2cd4e4111ab0510094b9b3abc55879dc8f85cb04428ca13c6e1f80",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0xf9B947A1d5bD8abfED4D9b729A0AEaA726228fE6",
+          "fee": 3000,
+          "tickSpacing": 60,
+          "hooks": "0x0000000000000000000000000000000000000000"
+        }
+      }
+    },
+    "AAPL": {
+      "feedId": "0x4141504c00000000000000000000000000000000000000000000000000000000",
+      "token": "0x0dfCeF65A9b4E44252B288adCaA526ed1d2A0b20",
+      "startPriceE8": 34237000000,
+      "sigmaE12": 64300000,
+      "stockIsCurrency0": true,
+      "hookPool": {
+        "poolId": "0xa0afa7e94a13527b464ddcfc3fc19038f665184d7ef7fe938283e86e0b0966e7",
+        "key": {
+          "currency0": "0x0dfCeF65A9b4E44252B288adCaA526ed1d2A0b20",
+          "currency1": "0x3600000000000000000000000000000000000000",
+          "fee": 8388608,
+          "tickSpacing": 60,
+          "hooks": "0xb5b44F87473da93eb56BE43597BeaB59F50a2080"
+        }
+      },
+      "controlPool": {
+        "poolId": "0x8c9b3e0b134ca1d5707add7761e7bd201428a0bf1879a1067d038282f57a3cf5",
+        "key": {
+          "currency0": "0x0dfCeF65A9b4E44252B288adCaA526ed1d2A0b20",
+          "currency1": "0x3600000000000000000000000000000000000000",
+          "fee": 3000,
+          "tickSpacing": 60,
+          "hooks": "0x0000000000000000000000000000000000000000"
+        }
+      }
+    },
+    "GOOGL": {
+      "feedId": "0x474f4f474c000000000000000000000000000000000000000000000000000000",
+      "token": "0x8cF28B53990CA7071a60A9E9c83fcCf7e0f6F746",
+      "startPriceE8": 28478000000,
+      "sigmaE12": 75800000,
+      "stockIsCurrency0": false,
+      "hookPool": {
+        "poolId": "0xb917e4a96eb3e377481e8ce0205a267897f7e8ebff41e705873afdf1e410a2f6",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0x8cF28B53990CA7071a60A9E9c83fcCf7e0f6F746",
+          "fee": 8388608,
+          "tickSpacing": 60,
+          "hooks": "0xb5b44F87473da93eb56BE43597BeaB59F50a2080"
+        }
+      },
+      "controlPool": {
+        "poolId": "0xf77b191bad19e097e27c2e75b3bb30e91120058e2f718b864e7fbd7be02cd264",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0x8cF28B53990CA7071a60A9E9c83fcCf7e0f6F746",
+          "fee": 3000,
+          "tickSpacing": 60,
+          "hooks": "0x0000000000000000000000000000000000000000"
+        }
+      }
+    },
+    "META": {
+      "feedId": "0x4d45544100000000000000000000000000000000000000000000000000000000",
+      "token": "0xE53762Ac95105ed68D7384E8e1b76c3e16ba5C4A",
+      "startPriceE8": 61015000000,
+      "sigmaE12": 85800000,
+      "stockIsCurrency0": false,
+      "hookPool": {
+        "poolId": "0xddab766666de840d0c34ed58918f0109492cdec19d37b405afb0babeecba989c",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0xE53762Ac95105ed68D7384E8e1b76c3e16ba5C4A",
+          "fee": 8388608,
+          "tickSpacing": 60,
+          "hooks": "0xb5b44F87473da93eb56BE43597BeaB59F50a2080"
+        }
+      },
+      "controlPool": {
+        "poolId": "0xe3267fc4493f4d3c2ade0a79e706aa0a8972f0d0224014ac7e7f7752f167f579",
+        "key": {
+          "currency0": "0x3600000000000000000000000000000000000000",
+          "currency1": "0xE53762Ac95105ed68D7384E8e1b76c3e16ba5C4A",
+          "fee": 3000,
+          "tickSpacing": 60,
+          "hooks": "0x0000000000000000000000000000000000000000"
+        }
+      }
+    }
+  }
+}
